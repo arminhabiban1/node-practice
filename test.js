@@ -1,2 +1,3 @@
-const name = 'armin'
-console.log(name)
+global.setTimeout(()=>{
+    console.log('Hello World!');
+},7000)
