@@ -1,18 +1,11 @@
-const fs = require('fs');
-const { f } = require('vue-carousel-3d');
-// fs.readFile('./d', (err,data)=>{
-    // if(err){
-        // console.log(err)
-    // }
-    // console.log(data.toString())
+const fs = require('fs')
+const readStream= fs.createReadStream('./blog1.txt',{encoding: 'utf8'})
+const writeStream = fs.createWriteStream('./blog2.text')
+// readStream.on('data',(buffer)=>{
+    // console.log(buffer)
+// 
 // })
 // 
-// fs.appendFile('./blog1.txt','\nhello world', ()=>{
-    // console.log('salam chetori')
-// })
-fs.mkdir('./opencode',()=>{
-
-})
-fs.rmdir('./opencode',()=>{})
-
-fs.unlink('./opencode',()=>{})
+readStream.pipe(writeStream
+    
+)
